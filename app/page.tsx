@@ -32,7 +32,7 @@ export default function FlowletLandingPage() {
             className="mx-auto drop-shadow-lg mt-16"
           />
           <h1 className="text-4xl font-bold tracking-tight">Flowlet</h1>
-          <p className="text-lg text-foreground max-w-xl mx-auto">
+          <p className="text-lg text-foreground max-w-xl mx-4">
             Flowlet is your AI-powered Web3 financial sidekick. Let your wallet
             think, act, and automate—so you don&apos;t have to.
           </p>
@@ -50,7 +50,7 @@ export default function FlowletLandingPage() {
             Web3 Is Powerful—But Clunky
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Card variant="warm">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <TerminalSquare className="text-primary" />
                 <h3 className="text-lg font-medium">Steep Learning Curve</h3>
@@ -62,7 +62,7 @@ export default function FlowletLandingPage() {
               </CardContent>
             </Card>
 
-            <Card variant="warm">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <ScrollText className="text-primary" />
                 <h3 className="text-lg font-medium">Complex Interfaces</h3>
@@ -73,7 +73,7 @@ export default function FlowletLandingPage() {
               </CardContent>
             </Card>
 
-            <Card variant="warm">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <MousePointerClick className="text-primary" />
                 <h3 className="text-lg font-medium">Web2 Disconnect</h3>
@@ -84,7 +84,7 @@ export default function FlowletLandingPage() {
               </CardContent>
             </Card>
 
-            <Card variant="warm">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <AlertTriangle className="text-primary" />
                 <h3 className="text-lg font-medium">
@@ -109,7 +109,7 @@ export default function FlowletLandingPage() {
             engine to take Web3 from complicated to effortless.
           </p>
           <div className="grid sm:grid-cols-3 gap-4">
-            <Card variant="gradient">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <Zap className="text-primary" />
                 <p>
@@ -118,7 +118,7 @@ export default function FlowletLandingPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card variant="gradient">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <Settings className="text-primary" />
                 <p>
@@ -127,7 +127,7 @@ export default function FlowletLandingPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card variant="gradient">
+            <Card variant="cool">
               <CardContent className="p-4 space-y-2">
                 <CheckCircle className="text-primary" />
                 <p>
