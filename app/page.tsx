@@ -20,7 +20,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function FlowletLandingPage() {
   return (
-    <>
+    <div className="relative">
       <AuroraBackground />
       <main className="max-w-4xl mx-auto px-4 py-12 space-y-16 relative z-10">
         {/* Hero Section */}
@@ -276,6 +276,6 @@ export default function FlowletLandingPage() {
       <footer className="text-center text-muted-foreground pb-10">
         <p>&copy; {new Date().getFullYear()} Flowlet. All rights reserved.</p>
       </footer>
-    </>
+    </div>
   );
 }
