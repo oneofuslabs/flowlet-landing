@@ -1,103 +1,255 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  CheckCircle,
+  Zap,
+  DollarSign,
+  Settings,
+  AlertTriangle,
+  TerminalSquare,
+  ScrollText,
+  MousePointerClick,
+  TrendingUp,
+  CalendarClock,
+  Wallet,
+  Key,
+  Workflow,
+} from "lucide-react";
 
-export default function Home() {
+export default function FlowletLandingPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="max-w-4xl mx-auto px-4 py-12 space-y-16">
+      {/* Hero Section */}
+      <section className="text-center space-y-4">
+        <h1 className="text-4xl font-bold tracking-tight">Flowlet</h1>
+        <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          Flowlet is your AI-powered Web3 financial sidekick. Let your wallet
+          think, act, and automate—so you don&apos;t have to.
+        </p>
+        <Button size="lg">Get Started</Button>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Problem Section */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-8 text-center">
+          Web3 Is Powerful—But Clunky
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <TerminalSquare className="text-primary" />
+              <h3 className="text-lg font-medium">Steep Learning Curve</h3>
+              <p className="text-muted-foreground">
+                Navigating the world of wallets, smart contracts, and tokens
+                often requires technical expertise that many users don&apos;t
+                have.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <ScrollText className="text-primary" />
+              <h3 className="text-lg font-medium">Complex Interfaces</h3>
+              <p className="text-muted-foreground">
+                Most Web3 platforms feel like developer tools, not user-first
+                products. Confusing designs create hesitation and errors.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <MousePointerClick className="text-primary" />
+              <h3 className="text-lg font-medium">Web2 Disconnect</h3>
+              <p className="text-muted-foreground">
+                Web3 workflows don&apos;t align with the smooth, intuitive
+                experiences users are used to from traditional apps.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <AlertTriangle className="text-primary" />
+              <h3 className="text-lg font-medium">Repetitive Manual Actions</h3>
+              <p className="text-muted-foreground">
+                Every action needs your signature. Again and again. It slows
+                things down and turns automation into a dream.
+              </p>
+            </CardContent>
+          </Card>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Solution Section */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          Meet Flowlet: Your Web3 Co-Pilot
+        </h2>
+        <p className="text-muted-foreground mb-4 text-center">
+          Flowlet combines AI, smart contract accounts, and a powerful rule
+          engine to take Web3 from complicated to effortless.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <Zap className="text-primary" />
+              <p>
+                Just talk to Flowlet in plain English to set up complex crypto
+                transactions.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <Settings className="text-primary" />
+              <p>
+                Create simple rules once, and Flowlet will remember and act on
+                them automatically.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <CheckCircle className="text-primary" />
+              <p>
+                Focus on what matters. Flowlet monitors, executes, and manages
+                your finances 24/7.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Use Cases */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-8 text-center">
+          Smarter Wallet, Smarter Life
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <TrendingUp className="text-primary" />
+              <h3 className="text-lg font-medium">Automated Trading</h3>
+              <p className="text-muted-foreground">
+                Set conditions like &quot;Sell my ETH at $4,000&quot; and let
+                Flowlet handle the timing and execution.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <CalendarClock className="text-primary" />
+              <h3 className="text-lg font-medium">Recurring Payments</h3>
+              <p className="text-muted-foreground">
+                Schedule routine transactions like rent or subscriptions
+                once—Flowlet takes care of the rest.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <Wallet className="text-primary" />
+              <h3 className="text-lg font-medium">Smart Balance Transfers</h3>
+              <p className="text-muted-foreground">
+                Keep your wallet organized by setting thresholds. Automatically
+                move funds to cold storage or other accounts.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <DollarSign className="text-primary" />
+              <h3 className="text-lg font-medium">Revenue Allocation</h3>
+              <p className="text-muted-foreground">
+                Automatically convert portions of your income—like NFT
+                sales—into stablecoins or other tokens.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <Key className="text-primary" />
+              <h3 className="text-lg font-medium">Delegated Access</h3>
+              <p className="text-muted-foreground">
+                Grant specific permissions to teammates or assistants without
+                compromising control or security.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <Workflow className="text-primary" />
+              <h3 className="text-lg font-medium">Multi-Step Automations</h3>
+              <p className="text-muted-foreground">
+                Chain actions like &quot;Sell, convert to stablecoin, and
+                stake&quot; into seamless flows triggered automatically.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Tech Stack */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Under the Hood</h2>
+        <ul className="grid grid-cols-2 gap-4 text-muted-foreground">
+          <li>
+            <strong>AI Layer:</strong> OpenAI / Claude with custom prompt
+            routing
+          </li>
+          <li>
+            <strong>Smart Contract Accounts:</strong> Solana-compatible, secure
+            abstractions
+          </li>
+          <li>
+            <strong>Rule Engine:</strong> Verifiable, reliable, and designed for
+            complex logic
+          </li>
+          <li>
+            <strong>Oracle Layer:</strong> Chainlink + custom backend monitoring
+          </li>
+          <li>
+            <strong>Web App:</strong> Built with Next.js, Tailwind, and Phantom
+            Wallet integration
+          </li>
+        </ul>
+      </section>
+
+      {/* Roadmap */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Where We&apos;re Headed</h2>
+        <div className="space-y-2 text-muted-foreground">
+          <p>
+            <strong>v1:</strong> AI-driven rule builder, smart transaction
+            memory, and automated payments
+          </p>
+          <p>
+            <strong>v2:</strong> Multi-user permissions, Layer-2 support, and
+            mobile app
+          </p>
+          <p>
+            <strong>v3:</strong> Real-world asset support, automated revenue
+            flows, and DAO integrations
+          </p>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="text-center space-y-4">
+        <h2 className="text-2xl font-semibold">Let Your Wallet Run the Show</h2>
+        <p className="text-muted-foreground max-w-xl mx-auto">
+          Flowlet is the future of Web3 finance—intelligent, automated, and
+          always on. Ready to give your crypto life an upgrade?
+        </p>
+        <Button size="lg">Launch Flowlet</Button>
+      </section>
+    </main>
   );
 }
