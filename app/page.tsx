@@ -1,3 +1,4 @@
+"use server";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -18,7 +19,17 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { WavyBackground } from "@/components/ui/wavy-background";
-export default function FlowletLandingPage() {
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Flowlet - Your AI-powered Web3 financial sidekick.",
+    description:
+      "Flowlet is your AI-powered Web3 financial sidekick. Let your wallet think, act, and automate—so you don't have to.",
+  };
+}
+
+export default async function FlowletLandingPage() {
   return (
     <div className="relative">
       {/* <AuroraBackground /> */}
