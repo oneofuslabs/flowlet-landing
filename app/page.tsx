@@ -18,12 +18,12 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { WavyBackground } from "@/components/ui/wavy-background";
 export default function FlowletLandingPage() {
   return (
     <div className="relative">
-      <AuroraBackground />
-      <main className="max-w-4xl mx-auto px-4 py-12 space-y-16 relative z-10">
-        {/* Hero Section */}
+      {/* <AuroraBackground /> */}
+      <WavyBackground className="max-w-4xl mx-auto pb-40">
         <section className="text-center space-y-4">
           <Image
             src="/flowlet.png"
@@ -41,6 +41,9 @@ export default function FlowletLandingPage() {
             <Button size="lg">Get Started</Button>
           </Link>
         </section>
+      </WavyBackground>
+      <main className="max-w-4xl mx-auto px-4 py-12 space-y-16 relative z-10">
+        {/* Hero Section */}
 
         {/* Problem Section */}
         <section>
