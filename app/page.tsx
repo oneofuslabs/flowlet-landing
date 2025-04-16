@@ -211,54 +211,6 @@ export default function FlowletLandingPage() {
           </div>
         </section>
 
-        {/* Tech Stack */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Under the Hood</h2>
-          <ul className="grid grid-cols-2 gap-4 text-muted-foreground">
-            <li>
-              <strong>AI Layer:</strong> OpenAI / Claude with custom prompt
-              routing
-            </li>
-            <li>
-              <strong>Smart Contract Accounts:</strong> Solana-compatible,
-              secure abstractions
-            </li>
-            <li>
-              <strong>Rule Engine:</strong> Verifiable, reliable, and designed
-              for complex logic
-            </li>
-            <li>
-              <strong>Oracle Layer:</strong> Chainlink + custom backend
-              monitoring
-            </li>
-            <li>
-              <strong>Web App:</strong> Built with Next.js, Tailwind, and
-              Phantom Wallet integration
-            </li>
-          </ul>
-        </section>
-
-        {/* Roadmap */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">
-            Where We&apos;re Headed
-          </h2>
-          <div className="space-y-2 text-muted-foreground">
-            <p>
-              <strong>v1:</strong> AI-driven rule builder, smart transaction
-              memory, and automated payments
-            </p>
-            <p>
-              <strong>v2:</strong> Multi-user permissions, Layer-2 support, and
-              mobile app
-            </p>
-            <p>
-              <strong>v3:</strong> Real-world asset support, automated revenue
-              flows, and DAO integrations
-            </p>
-          </div>
-        </section>
-
         {/* Call to Action */}
         <section className="text-center space-y-4">
           <h2 className="text-2xl font-semibold">
