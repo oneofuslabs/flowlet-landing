@@ -23,17 +23,17 @@ export default function FlowletLandingPage() {
   return (
     <div className="relative">
       {/* <AuroraBackground /> */}
-      <WavyBackground className="max-w-4xl mx-auto pb-40">
+      <WavyBackground className="max-w-4xl mx-auto pb-20">
         <section className="text-center space-y-4">
           <Image
             src="/flowlet.png"
             alt="Flowlet Logo"
             width={180}
             height={180}
-            className="mx-auto drop-shadow-lg"
+            className="mx-auto drop-shadow-lg mt-16"
           />
           <h1 className="text-4xl font-bold tracking-tight">Flowlet</h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="text-lg text-foreground max-w-xl mx-auto">
             Flowlet is your AI-powered Web3 financial sidekick. Let your wallet
             think, act, and automate—so you don&apos;t have to.
           </p>
